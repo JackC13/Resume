@@ -1,0 +1,200 @@
+@charset "UTF-8";
+#resume ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resume ul.list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#resume ul.list li.r {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#resume ul.list .list-item {
+  padding-right: 10px;
+}
+
+#resume .rightBorder {
+  border-right: 3px solid red;
+}
+
+#resume .yellowStar {
+  height: 15px;
+  width: 15px;
+  background-color: darkgoldenrod;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#resume .yellowStar.half {
+  -webkit-clip-path: polygon(50% 0%, 51% 34%, 51% 49%, 51% 56%, 51% 69%, 51% 69%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 51% 34%, 51% 49%, 51% 56%, 51% 69%, 51% 69%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+#resume .rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#resume .block-header {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+#resume .block-header .b-about span,
+#resume .block-header .b-experience span,
+#resume .block-header .b-skill span,
+#resume .block-header .b-works span {
+  border-bottom: 3px solid #afafaf;
+}
+
+#resume .block-header .b-about:before {
+  content: "關";
+}
+
+#resume .block-header .b-experience:before {
+  content: "工";
+}
+
+#resume .block-header .b-skill:before {
+  content: "專";
+}
+
+#resume .block-header .b-works:before {
+  content: "作";
+}
+
+#resume .block-header span:before {
+  color: #ffffff;
+  display: inline-block;
+  width: 30px;
+  height: 43px;
+  background: red;
+  position: relative;
+  z-index: -1;
+}
+
+#resume .block-header,
+#resume .item-header {
+  font-weight: bold;
+}
+
+#resume .block-header.m,
+#resume .item-header.m {
+  text-align: center;
+}
+
+#resume .block-header.r,
+#resume .item-header.r {
+  text-align: right;
+}
+
+#resume .timeTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#resume .item-content {
+  text-align: justify;
+}
+
+#resume .contact ul {
+  text-align: right;
+}
+
+#resume .personalInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resume .personalImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#resume .personalImg .personalImg-img {
+  height: 250px;
+  width: 250px;
+  background: url("https://picsum.photos/id/237/200/300");
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+#resume .aboutMe .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#resume .master .dissertation,
+#resume .master .education {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#resume .mainContent .experience,
+#resume .mainContent .language,
+#resume .mainContent .skill,
+#resume .mainContent .interest,
+#resume .mainContent .works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#resume .works .work {
+  padding-bottom: 20px;
+}
+
+#resume .works .work .img {
+  width: 100%;
+  height: 200px;
+  background: url("https://picsum.photos/300/200");
+  background-repeat: no-repeat;
+  background-size: content;
+  background-position: left;
+}
+
+#resume .works .work .description {
+  height: 100%;
+  border-bottom: 3px solid red;
+}
+
+#resume .works .work .description .content {
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */

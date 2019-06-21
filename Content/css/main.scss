@@ -1,0 +1,155 @@
+* {
+  // border:1px solid #000;
+}
+$black-header-gray: #afafaf;
+
+#resume {
+  ul {
+    list-style: none;
+    padding: 0;
+    &.list {
+      li {
+        display: flex;
+        align-items: center;
+        &.r {
+          justify-content: flex-end;
+        }
+      }
+      .list-item {
+        padding-right: 10px;
+      }
+    }
+  }
+  .rightBorder {
+    border-right: 3px solid red;
+  }
+
+  .yellowStar {
+    height: 15px;
+    width: 15px;
+    background-color: darkgoldenrod;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    &.half {
+      clip-path: polygon(50% 0%, 51% 34%, 51% 49%, 51% 56%, 51% 69%, 51% 69%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+  }
+  .rank {
+    display: flex;
+  }
+  .block-header {
+    font-size: 30px;
+    padding-bottom: 15px;
+    .b-about,
+    .b-experience,
+    .b-skill,
+    .b-works {
+      span {
+        border-bottom: 3px solid $black-header-gray;
+      }
+    }
+    .b-about:before {
+      content: "關";
+    }
+    .b-experience:before {
+      content: "工";
+    }
+    .b-skill:before {
+      content: "專";
+    }
+    .b-works:before {
+      content: "作";
+    }
+    span:before {
+      color: #ffffff;
+      display: inline-block;
+      width: 30px;
+      height: 43px;
+      background: red;
+      position: relative;
+      z-index: -1;
+    }
+  }
+  .block-header,
+  .item-header {
+    font-weight: bold;
+    &.m {
+      text-align: center;
+    }
+    &.r {
+      text-align: right;
+    }
+  }
+  .timeTitle {
+    display: flex;
+    align-items: center;
+  }
+  .item-content {
+    text-align: justify;
+  }
+  .contact {
+    ul {
+      text-align: right;
+    }
+  }
+  .personalInfo {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+  .personalImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .personalImg-img {
+      height: 250px;
+      width: 250px;
+      background: url("https://picsum.photos/id/237/200/300");
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+  }
+  .aboutMe {
+    .about {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .master {
+    .dissertation,
+    .education {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .mainContent {
+    .experience,
+    .language,
+    .skill,
+    .interest,
+    .works {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .works {
+    .work {
+      padding-bottom: 20px;
+      .img {
+        width: 100%;
+        height: 200px;
+        background: url("https://picsum.photos/300/200");
+        background-repeat: no-repeat;
+        background-size: content;
+        background-position: left;
+      }
+      .description {
+        height: 100%;
+        border-bottom: 3px solid red;
+        .content {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
