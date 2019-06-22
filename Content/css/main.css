@@ -107,6 +107,13 @@
   font-weight: bold;
   background: #204056;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#resume .item-title a {
+  color: #ffffff;
 }
 
 #resume .timeTitle {

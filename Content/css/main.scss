@@ -89,6 +89,10 @@ $title:#204056;
     font-weight: bold; 
     background: $title;
     color:#ffffff; 
+    display: flex;
+    a{
+      color:#ffffff;
+    }
   }
   .timeTitle {
     display: flex;
