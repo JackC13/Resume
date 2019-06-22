@@ -1,8 +1,9 @@
 * {
   // border:1px solid #000;
 }
-$black-header-gray: #afafaf;
-
+$border:#f65a5b;
+$black-header: #afafaf;
+$title:#204056;
 #resume {
   ul {
     list-style: none;
@@ -21,8 +22,12 @@ $black-header-gray: #afafaf;
     }
   }
   .rightBorder {
-    border-right: 3px solid red;
+    border-right: 3px solid $border;
   }
+  .bottomBorder {
+    border-bottom: 3px solid $black-header;
+  }
+
 
   .yellowStar {
     height: 15px;
@@ -45,7 +50,7 @@ $black-header-gray: #afafaf;
     .b-skill,
     .b-works {
       span {
-        border-bottom: 3px solid $black-header-gray;
+        border-bottom: 3px solid $black-header;
       }
     }
     .b-about:before {
@@ -65,7 +70,7 @@ $black-header-gray: #afafaf;
       display: inline-block;
       width: 30px;
       height: 43px;
-      background: red;
+      background: $border;
       position: relative;
       z-index: -1;
     }
@@ -79,6 +84,11 @@ $black-header-gray: #afafaf;
     &.r {
       text-align: right;
     }
+  }
+  .item-title{
+    font-weight: bold; 
+    background: $title;
+    color:#ffffff; 
   }
   .timeTitle {
     display: flex;
@@ -137,53 +147,38 @@ $black-header-gray: #afafaf;
   }
   .works {
     .work{
-      padding-bottom: 20px;
+      padding: 20px 20px 20px 20px;
+      .img{
+        width: 100%;
+        height: 290px;
+
+        &.oivita{
+          background: url('../img/oivita.JPG');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &.travellight{
+          background: url('../img/travellight.JPG');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &.solarmanV1{
+          background: url('../img/solarmanV1.JPG');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+        &.solarmanV2{
+          background: url('../img/solarmanV2.JPG');
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
       .description {
         height: 100%;
-        border-bottom: 3px solid red;
+        // border-bottom: 3px solid $black-header-gray;
         .content {
           text-align: justify;
         }
-      }
-    }
-    .work:nth-child(1) {
-      .img {
-        width: 100%;
-        height: 200px;
-        background: url('../img/oivita.JPG');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-      }
-    }
-    .work:nth-child(2) {
-      .img {
-        width: 100%;
-        height: 200px;
-        background: url('../img/travellight.JPG');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-      }
-    }
-    .work:nth-child(3) {
-      .img {
-        width: 100%;
-        height: 200px;
-        background: url('../img/solarmanV1.JPG');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
-      }
-    }
-    .work:nth-child(4) {
-      .img {
-        width: 100%;
-        height: 200px;
-        background: url('../img/solarmanV2.JPG');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: left;
       }
     }
   }

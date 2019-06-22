@@ -24,7 +24,11 @@
 }
 
 #resume .rightBorder {
-  border-right: 3px solid red;
+  border-right: 3px solid #f65a5b;
+}
+
+#resume .bottomBorder {
+  border-bottom: 3px solid #afafaf;
 }
 
 #resume .yellowStar {
@@ -79,7 +83,7 @@
   display: inline-block;
   width: 30px;
   height: 43px;
-  background: red;
+  background: #f65a5b;
   position: relative;
   z-index: -1;
 }
@@ -97,6 +101,12 @@
 #resume .block-header.r,
 #resume .item-header.r {
   text-align: right;
+}
+
+#resume .item-title {
+  font-weight: bold;
+  background: #204056;
+  color: #ffffff;
 }
 
 #resume .timeTitle {
@@ -180,51 +190,43 @@
 }
 
 #resume .works .work {
-  padding-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+#resume .works .work .img {
+  width: 100%;
+  height: 290px;
+}
+
+#resume .works .work .img.oivita {
+  background: url("../img/oivita.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#resume .works .work .img.travellight {
+  background: url("../img/travellight.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#resume .works .work .img.solarmanV1 {
+  background: url("../img/solarmanV1.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#resume .works .work .img.solarmanV2 {
+  background: url("../img/solarmanV2.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #resume .works .work .description {
   height: 100%;
-  border-bottom: 3px solid red;
 }
 
 #resume .works .work .description .content {
   text-align: justify;
-}
-
-#resume .works .work:nth-child(1) .img {
-  width: 100%;
-  height: 200px;
-  background: url("../img/oivita.JPG");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-}
-
-#resume .works .work:nth-child(2) .img {
-  width: 100%;
-  height: 200px;
-  background: url("../img/travellight.JPG");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-}
-
-#resume .works .work:nth-child(3) .img {
-  width: 100%;
-  height: 200px;
-  background: url("../img/solarmanV1.JPG");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
-}
-
-#resume .works .work:nth-child(4) .img {
-  width: 100%;
-  height: 200px;
-  background: url("../img/solarmanV2.JPG");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left;
 }
 /*# sourceMappingURL=main.css.map */
