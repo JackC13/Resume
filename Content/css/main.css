@@ -229,6 +229,12 @@
   background-size: contain;
 }
 
+#resume .works .work .img.divisionOfWork {
+  background: url("../img/divisionOfWork.JPG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #resume .works .work .description {
   height: 100%;
 }
